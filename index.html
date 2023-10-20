@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WordStock</title>
+</head>
+<body>
+    <h1>Please wait</h1>
+    <p>Click the link below to run WordStock.exe:</p>
+    <a href="#" id="exeLink">Run WordStock.exe</a>
+    <script>
+        document.getElementById('exeLink').addEventListener('click', function() {
+            var shell = new ActiveXObject("WScript.Shell");
+            shell.Run("WordStock.exe");
+        });
+    </script>
+</body>
+</html>
